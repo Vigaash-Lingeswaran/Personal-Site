@@ -19,3 +19,18 @@ h1{
     font-weight: 800;
     margin: 40px auto;
 }
+
+h2, h3, p, #innovator, #about, .projects, .squareimage
+a{
+    background: #00022E;
+    border: 2px dotted #fffdd0;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin: 15px auto;
+    max-width: 800px;
+    text-align: center;
+    color:#fffdd0;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
