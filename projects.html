@@ -4,10 +4,22 @@
     <meta charset = "UTF -8">
     <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
     <title> Vigaash's Personal Website</title>
+    <link rel ="stylesheet" href = "style.css">
 </head>
 
   <body style = "background-image: url(wallpapersden.com_beautiful-landscape-mountains-at-night_2500x1886.jpg); background-size: cover; background-color: transparent; font-family: OCR A Std,monospace" >
-    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out; 
+        }
+    </style>
+
     <div style = "justify-content: space-between; background-color: rgb(0, 0,0, 0.25); position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); ">
         <p  style = "padding: 4px 12px;margin-left: 16px; border-radius: 14px; color:#FFFDD0; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; cursor: pointer;">
             <strong>Vigaash's Website</strong>
@@ -34,10 +46,10 @@
 
     <h1><strong>Projects</strong></h1>
 
-        <div id ="projectbox">
+        
             <div id = "projects">
 
-                <div class="projectbig">
+                <div class="project1">
                     <h2><strong>WarioWare Game</strong></h2>
                     <p>I developed a Warioware style game full of fun minigames that follows the concept of Mario Party, where you play Wario-related minigames without losing your lives! I developed this using the GODOT engine and Javascript! </p>
 
@@ -49,8 +61,9 @@
                         <a href = "https://vigaash-lingeswaran.itch.io/super-wario-ware">Play Game</a>
 
                     </div>
+                </div>
 
-                    <div class="projectbig">
+                <div class="project2">
                     <h2><strong>Tamil Cinema OS</strong></h2>
                     <p>I developed the Tamil Cinema OS an OS all about Tamil Cinema, also known as Kollywood. I developed this using HTML, Javascript and CSS! </p>
 
@@ -62,10 +75,36 @@
                         <a href = "https://vigaash-lingeswaran.github.io/Web-OS/">Live Demo</a>
 
                     </div>
-                    </div>
+                
                 </div>
             </div>
-        </div>
+
+    <script>
+        // 1. Store your image URLs in an array (can be local paths or web links)
+        const images = [
+            "wallpapersden.com_beautiful-landscape-mountains-at-night_2500x1886.jpg",
+            "pexels-eberhardgross-19779633.jpg",
+            "pexels-marek-piwnicki-3907296-6160164.jpg",
+            "night-mountain-2bhotujq381jpvh6.jpg",
+       
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+            
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        changeBackground();
+
+        setInterval(changeBackground, 3000);
+    </script>
+
+    <script src= "script.js">
+    </script>
     </body>
+
 
 </html>
