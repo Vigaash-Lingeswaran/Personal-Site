@@ -22,7 +22,7 @@ h1{
 
 }
 
-h2, h3, p,#innovator, #About,#gif,  .projects, .squareimage,.projectbox, .project1,
+h2, h3, p,#innovator, #About,#gif, #robotics  .projects, .squareimage,.projectbox, .project1,
 .project2,.project3,
 a{
     background: #00022E;
@@ -85,14 +85,8 @@ a{
     padding: 20px 25px;
     padding-bottom: 14px;
     padding-top: 14px;
-    margin-left: 30px;
-    margin-top: auto;
-    width: 900px;
     text-align: center;
     align-items: left;
-    top: 60%; 
-    left: 20%; 
-    transform: translate(10%, 2.5%);
     color:#fffdd0;
     text-decoration: none;
     display: block;
@@ -105,14 +99,8 @@ a{
     border: 2mm ridge #fffdd0;
     border-radius: 8px;
     padding: 20px 25px;
-    margin-left: 1000px;
-    margin-top: auto;
-    max-width: 800px;
     text-align: center;
     align-items: right;
-    top: 60%; 
-    left: 20%; 
-    transform: translate(20%, -50%);
     color:#fffdd0;
     text-decoration: none;
     display: block;

@@ -46,42 +46,51 @@
         </a>
     </nav>
     <hr>
-    <h1><strong>Interests</strong></h1>
-    <div class = "flexcontainer">
-        <div id ="interest1" style = " text-align: center; color: #FFFDD0; padding-top: 14px; padding-bottom: 14px;">
-            <h1 >Movies</h1>
-            <p> I really enjoy watching all types of movies! I am into both English and Tamil Cinema! </p>    
-            <p> My favourite English movie director would be <strong>Christopher Nolan</strong>, and my favourite work of his would be <strong><dfn>Interstellar</dfn></strong></p>
+    <h1 style="text-align: center;">Interests</h1>
 
-        </div>
-        <img id = "gif"style = "align-items: right; height:400px; width: 600px;top: 60%; left: 20%; transform: translate(80%, -100%);" src = "images/433d83f7e481f35245f8c6bb7c7591d8.gif">
-        <div id = "interest2">
-            <h1><strong>Robotics</strong></h1>
-            <p> I really enjoy working with all types of hardware like Arduinos, Servos, Ultrasonic sensors, Motors and more! </p>
-            <p> I have made many diferent projetcs like a <strong>Line Follower Robot</strong>, <strong>Maze Navigating Robot</strong>, and <strong>Shooter Bot!</strong></p>
-        </div> 
-        <div>
-        <div class = "carouselcontainer" style = "transform: translate(-140%, -125%); ">
-            <div class = "carouselslide">
-                <figure class = "slide">
-                    <img src = "images/IMG_1166_1.jpg">
-                    <figcaption><strong>Line Follower Robot:</strong> Arduino coded bot that follows a black line using an Infrared sensor at fast speeds!<br><br></figcaption>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 80px; width: 100%; max-width: 100%; margin: 0 auto; padding: 20px; box-sizing: border-box;">
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 40px; width: 100%; flex-wrap: wrap;">
+    <div id="interest1" style="text-align: center; color: #FFFDD0; flex: 1; min-width: 800px; max-width: 800px;">
+      <h1>Movies</h1>
+      <p>I really enjoy watching all types of movies! I am into both English and Tamil Cinema!</p>
+      <p>My favourite English movie director would be <strong>Christopher Nolan</strong>, and my favourite work of his would be <strong><dfn>Interstellar</dfn></strong></p>
+    </div>
+    <div style="flex: 1; min-width: 300px; max-width: 600px; display: flex; justify-content: center;">
+      <img id="gif" style="height: auto; max-height: 400px; width: 100%; object-fit: contain;" src="images/433d83f7e481f35245f8c6bb7c7591d8.gif" alt="Movie GIF">
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 40px; width: 100%; flex-wrap: wrap;">
+    <div id="robotics" style="flex: 1; min-width: 300px; max-width: 600px; position: relative;">
+      <div class="carouselcontainer" style="width: 100%; overflow: hidden; position: relative;">
+        <div class="carouselslide">
+                <figure class="slide">
+                <img src="images/IMG_1166_1.jpg">
+                <figcaption><strong>Line Follower Robot:</strong> Arduino coded bot that follows a black line using an Infrared sensor at fast speeds!<br><br></figcaption>
                 </figure>
-                <figure class = "slide">
-                    <img src = "images/img2.jpg">
-                    <figcaption><strong>Maze Navigating Bot:</strong> Arduino coded bot that navigates through a maze using Ultrasonic sensors!</figcaption>
+                <figure class="slide">
+                <img src="images/img2.jpg">
+                <figcaption><strong>Maze Navigating Bot:</strong> Arduino coded bot that navigates through a maze using Ultrasonic sensors!<br></figcaption>
                 </figure>
-                <figure class = "slide">
-                    <img src = "images/IMG_1166_3.jpg">
-                    <figcaption><strong>Shooter Bot:</strong> Arduino coded bot that uses servos and is controlled remotely to shoot rubber bands at targets!<br><br></figcaption>
+                <figure class="slide">
+                <img src="images/IMG_1166_3.jpg">
+                <figcaption><strong>Shooter Bot:</strong> Arduino coded bot that uses servos and is controlled remotely to shoot rubber bands at targets!<br><br></figcaption>
                 </figure>
             </div>
-            <button class="nav-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="nav-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-        <br>
-        </div>
+        <button class="nav-btn prev-btn" onclick="moveSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);">❮</button>
+        <button class="nav-btn next-btn" onclick="moveSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">❯</button>
+      </div>
     </div>
+
+    <div id="interest2" style="text-align: center; flex: 1; min-width: 800px; max-width: 800px;">
+      <h1><strong>Robotics</strong></h1>
+      <p>I really enjoy working with all types of hardware like Arduinos, Servos, Ultrasonic sensors, Motors and more!</p>
+      <p>I have made many different projects like a <strong>Line Follower Robot</strong>, <strong>Maze Navigating Robot</strong>, and <strong>Shooter Bot!</strong></p>
+    </div>
+  </div>
+
+</div>
         <hr>
 
         <script>
