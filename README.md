@@ -23,6 +23,7 @@ Building Notes/Tech Stack:
 - Javascript was used for certain actions (live time element).
 - CSS was used for the styles (font-size, and more).
 - The Images: All of the images and the icons that were used were free-use images.
+- No AI use
 
 Problems and Solutions
 - Spacing Issues: One problem with all of the different Divs, headers, and more all had a very common problem. It would always seem somehow off center itself, even though I had put those details in the styles files. After a lot of frustration, I decided to just use the transform() function, which allowed me to exactly place whatever components I needed.
